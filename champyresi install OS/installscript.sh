@@ -6,6 +6,7 @@ sudo apt-get install npm mariadb-server xscreensaver firefox-esr -y
 git clone https://gitlab.com/morback974/champyresi.git && cd champyresi
 npm install 
 sudo mysql --user=root << EOF
+use mysql;
 update user set authentication_string=password(''), plugin='mysql_native_password' where user='root';
 update user set password='' where user='root';
 flush privileges;
