@@ -1,0 +1,14 @@
+{
+	"workbench.colorTheme": "GitHub Dark",
+	"workbench.iconTheme": "vscode-icons",
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.wordWrapColumn": 100,
+	"editor.rulers" : [100],
+	"editor.tabSize": 2,
+	"terminal.integrated.shell.linux": "/bin/zsh",
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "all"
+}
