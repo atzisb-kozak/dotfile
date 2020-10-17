@@ -1,0 +1,2 @@
+https://github.com/romkatv/powerlevel10k#oh-my-zsh
+p10k configure
