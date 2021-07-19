@@ -3,12 +3,11 @@ from time import sleep
 import signal
 import sys
 
-pot1 = MCP3008(0, 8)
-pot2 = MCP3008(4, 7)
+pot1 = MCP3008(channel=0, device=0)
+pot2 = MCP3008(channel=4, device=1)
 
 def signal_handler(sig, frame):
 	"""SIGINT Signal handle to exit gracefully
-
 	Args:
 			sig ([None]): [signal]
 			frame ([None]): [frame]
@@ -19,8 +18,8 @@ def signal_handler(sig, frame):
 
 def main() :
 	while True:
-		print("CAN No 0 pin 8 => {}".format(pot1.value))
-		print("CAN No 4 pin 7 => {}".format(pot2.value))
+		print("CAN No 0 pin 8 => {}".format(pot1.value*40))
+		print("CAN No 4 pin 7 => {}".format(pot2.value*40))
 		sleep(1)
 
 
