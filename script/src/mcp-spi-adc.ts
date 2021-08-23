@@ -159,8 +159,8 @@ class AdcChannel {
 				return cb(err);
 			}
 
-			if (message[0].sendBuffer !== undefined) {
-				reading.rawValue = this._config.rawValue(message[0].sendBuffer);
+			if (message[0].receiveBuffer !== undefined) {
+				reading.rawValue = this._config.rawValue(message[0].receiveBuffer);
 				reading.value = reading.rawValue / this._config.maxRawValue;
 			}
 
