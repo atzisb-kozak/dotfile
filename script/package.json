@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+		"build:ts" : "tsc",
+		"start": "node dist/testgpio.js"
   },
   "author": "",
   "license": "ISC",
